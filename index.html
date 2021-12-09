@@ -4,17 +4,42 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link  rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
     <title>Document</title>
   </head>
   <body>
-    <textarea rows="15" cols="60" id="textInput"></textarea>
-    <br/>
-    <br/> 
-    <button id="countButton">Contador de Frequência</button>
-
-    <div id="lettersDiv"></div>
-    <div id="wordsDiv"></div>
-
+    <header>
+        <nav>
+            <h1>Contador de Frequência</h1>
+            <ul class="menu">
+              <li class="menu_item">
+                <a class="menu_link" href="#">Home</a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link" href="#">About</a>
+              </li>
+              <li class="menu_item">
+                <a class="menu_link" href="#">Contato</a>
+              </li>
+              
+            </ul>
+        </nav>
+    </header>
+    <main>
+      <section class="countainer-TextAreaAndButton">
+        <textarea id="textInput"></textarea>
+        <button id="countButton">Contar frequência</button>
+      </section>
+      <section class="countainer-LettersDivAndWords">
+        <div id="lettersDiv"></div>
+        <div id="wordsDiv"></div>
+      </section>
+    </main>
     <script src="src/script.js"></script>
+    <footer>
+
+    </footer>
   </body>
 </html>
